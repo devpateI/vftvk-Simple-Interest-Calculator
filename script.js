@@ -15,8 +15,8 @@ function compute()
         return false;
     }
     var amount=parseFloat(interest)+parseFloat(principal);
-    document.getElementById("result").innerHTML="<b>"+interest+"</b>";
-    document.getElementById("resultfinal").innerHTML="If you deposit <b>"+principal+"</b>,\<br\>at an interest rate of <b>"+rate+"</b>%\<br\>You will receive an total amount of <b>"+amount+"</b>,\<br\>in the year <b>"+year+"</b>\<br\>";
+    var val=document.getElementById("result");
+    val.innerHTML="If you deposit "+"<mark>"+principal+"</mark>"+",<br>at an interest rate of "+"<mark>"+rate+"</mark>"+"%<br>You will receive an amount of interest "+"<mark>"+interest+"</mark>"+",<br> and you recive total amount is "+"<mark>"+ amount+"</mark>" +"in the year "+"<mark>"+year+"</mark>"+"<br>";
 }
 function updateRate() 
 {
